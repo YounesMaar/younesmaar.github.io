@@ -1,0 +1,256 @@
+body { 
+    font-family: 'Roboto', sans-serif;
+    /* height: 1000vh; */
+}
+
+
+:root { 
+    --dark-color: #27354F;
+    --green-color: #41D7D4;
+    --red-color: #FF4F67;
+    --yellow-color: #F7CF3B;
+    --section-color: #F3F8FB;
+}
+.main-btn { 
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+
+.main-btn:hover { 
+    background: var(--red-color);
+    color: var(--yellow-color);
+}
+a.btn { 
+    padding: 5px 40px;
+}
+
+.main-title:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: 40px;
+    transform: translateX(-30%) !important;
+}
+
+/* start navbar  */
+.navbar { 
+    background: var(--dark-color);
+}
+
+.navbar .container a img { 
+    width: 100px;
+    height: 50px;
+}
+.navbar .nav-link { 
+    color: #fff;
+}
+
+.navbar .nav-item .nav-link.active { 
+    color: var(--green-color);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active { 
+    color: var(--green-color)
+}
+.navbar .search { 
+    border-left: 2px solid var(--green-color);
+    color: var(--green-color);
+}
+.navbar .container .navbar-toggler { 
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar .container .navbar-toggler:focus { 
+    box-shadow: none;
+}
+
+.navbar .container .navbar-toggler[aria-expanded='true']:focus { 
+    border-color: var(--green-color);
+}
+/* end navbar */
+/* start landing-page */
+.landing { 
+    background: var(--dark-color);
+    height: calc(100vh - 76px);
+}
+.landing .welcome .text-white { 
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+/* end landing-page */
+/* start features */
+
+
+.features .row .icon-holder { 
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.features .number { 
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.features .icon { 
+    color: var(--green-color)
+}
+.features h3 { 
+    color: var(--yellow-color)
+}
+
+/* end features */
+/* start our work  */
+.features .our-work { 
+    background: var(--section-color)
+}
+.features .our-work ul .active { 
+    background: var(--red-color);
+    color: var(--yellow-color);
+}
+.features .our-work li { 
+    padding: .5rem 1rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.features .our-work li:not(.active):hover { 
+    color: var(--red-color);
+}
+
+.features .our-work .box { 
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+.features .our-work .row { 
+    background: var(--sectoin-color)
+}
+
+.features .our-work .feature { 
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.features .our-work .feature::before { 
+    content: attr(data-work);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 96.5%;
+    height: 93.5%;
+    background: #00fffb64;
+    position: absolute;
+    transform: translateX(calc(-100% - 5px));
+    transition: .5s;
+}
+
+.features .our-work .feature:hover::before { 
+    transform: translateX(0%)
+}
+
+/* end our work */
+/* start team */
+.about .team { 
+    background: var(--section-color);
+}
+.about .team h2 { 
+    color: var(--yellow-color);
+}
+.about .team .row h4 { 
+    background: var(--green-color);
+    color: #fff;
+}
+/* end team  */
+/* start project  */
+    .project { 
+        background: var(--dark-color);
+    }
+
+/* end project */
+/* start subscription */
+.subscription { 
+    background: var(--yellow-color)
+}
+.subscription .container form input[type="email"] { 
+    outline: none;
+    border: none;
+    border: 1px solid transparent;
+    border-bottom-color: white;
+    background: transparent;
+    caret-color: #fff;
+    color: #fff;
+}
+.subscription .container form input[type="submit"] { 
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+::placeholder { 
+    color: #fff;
+}
+/* end subscription */
+/* start-footer */
+footer {
+    background: var(--dark-color);
+}
+
+footer .container .row li a { 
+    text-decoration: none !important;
+
+}
+footer .container .row li a:hover { 
+    text-decoration: underline !important;
+}
+footer .copyright > span { 
+    color: var(--green-color);
+}
+
+footer .copyright div span { 
+    color: var(--yellow-color)
+}
+footer ul svg { 
+   padding: 10px;
+   cursor: pointer;
+   transition: .2s;
+}
+footer ul svg:active { 
+    transform: scale(.96);
+}
+footer .container .row li .facebook { 
+    background: #5B8FD6 !important;
+    color: #fff;
+}
+
+footer ul .twitter { 
+    background: #47CDFB !important;
+    color: #fff;
+}
+
+footer ul .linkedin { 
+    background: #0077b5 !important;
+    color: #fff;
+}
+
+footer ul .youtube { 
+    background: #FF5C4A;
+    color: #fff;
+}
+
+/* end-footer */
